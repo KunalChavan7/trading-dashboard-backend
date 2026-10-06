@@ -1,0 +1,21 @@
+{
+  "name": "trading-dashboard-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Binance market data relay with real-time technical indicators",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test test/indicators.test.js",
+    "test:ws": "node test-ws.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
